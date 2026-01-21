@@ -9,6 +9,10 @@ nav {
   background-color: #ffffff22;
 }
 
+#content {
+  margin: 15px;
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -34,7 +38,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #ff006a;
+  color: #c1bdff;
 }
 
 #nav-check {
@@ -71,7 +75,7 @@ nav {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #00000066;
+    background-color: #ffffff22;
     height: 0px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -224,7 +228,6 @@ body {
   border-radius: 12px;
 }
 
-/* Responsive */
 @media (max-width:1024px) {
   .card-content {
     flex-direction: column;
@@ -329,7 +332,6 @@ body {
   line-height: 1.6;
 }
 
-/* Responsive */
 @media (max-width:768px) {
   .team-text h3 {
     font-size: 1.5rem;
@@ -342,4 +344,24 @@ body {
   .value-card h3 {
     font-size: 1.3rem;
   }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+#animalt {
+  view-timeline-name: --felfedes;
+  view-timeline-axis: block;
+  animation: fade-in linear both;
+  animation-timeline: --felfedes;
+  animation-range: entry 10% cover 25%;
 }
