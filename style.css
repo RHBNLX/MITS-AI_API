@@ -90,7 +90,7 @@ nav {
   .nav-links li {
     width: 100%;
     padding: 15px 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ffffff66;
   }
 
   #nav-check:checked~.nav-links {
@@ -363,5 +363,5 @@ body {
   view-timeline-axis: block;
   animation: fade-in linear both;
   animation-timeline: --felfedes;
-  animation-range: entry 10% cover 25%;
+  animation-range: entry 10% cover 20%;
 }
